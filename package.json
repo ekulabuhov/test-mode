@@ -1,0 +1,10 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "codemirror": "^5.28.0",
+    "monaco-editor": "^0.9.0"
+  }
+}
