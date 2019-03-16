@@ -3,16 +3,19 @@
   "version": "1.3",
   "description": "Times how long it takes to send a message to a content script and back.",
   "content_scripts": [{
-      "matches": ["https://www.google.ie/*", "https://www.logograb.com/backoffice/*"],
+      "matches": ["https://www.google.ie/*", "https://www.logograb.com/backoffice/*", "https://dev.kamion.mobi/*"],
       "js": [
         "node_modules/codemirror/lib/codemirror.js",
         "node_modules/codemirror/mode/javascript/javascript.js", 
         "node_modules/codemirror/addon/edit/closebrackets.js", 
+        "node_modules/jquery/dist/jquery.js", 
+        "node_modules/bootstrap/dist/js/bootstrap.bundle.js", 
         "content_frame.js"
       ],
       "css": [
         "node_modules/codemirror/lib/codemirror.css",
-        "node_modules/codemirror/theme/material.css"
+        "node_modules/codemirror/theme/material.css",
+        "node_modules/bootstrap/dist/css/bootstrap.css" 
       ],
       "all_frames": true
   }],
